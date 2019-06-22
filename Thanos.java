@@ -15,9 +15,7 @@ public class Thanos {
         heroes.add(new Hero("Hulk", 49));
         heroes.add(new Hero("Doctor Strange", 42));
 
-        heroes.stream()
-            .filter(hero -> "Thor".equals(hero.getName()))
-            .forEach(hero -> hero.setAge(1501));
+        heroes.get(5).setAge(1501);
 
         Collections.shuffle(heroes);
 
